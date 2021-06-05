@@ -1,11 +1,14 @@
 import { Bars, Nav, NavIcon, NavLink } from "./NavbarElements"
 
-const Navbar = () => {
+interface NavbarProps {
+    toggle: () => void,
+}
+const Navbar = ({ toggle }: NavbarProps) => {
     return (
         <>
             <Nav>
                 <NavLink to='/'>Pizza</NavLink>
-                <NavIcon>
+                <NavIcon onClick={toggle}>
                     <p>Menu</p>
                     <Bars />
                 </NavIcon>

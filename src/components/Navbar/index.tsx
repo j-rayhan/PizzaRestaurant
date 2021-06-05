@@ -1,3 +1,16 @@
-import NavBarElements from "./NavbarElements"
+import { Bars, Nav, NavIcon, NavLink } from "./NavbarElements"
 
-export { NavBarElements }
+const Navbar = () => {
+    return (
+        <>
+            <Nav>
+                <NavLink to='/'>Pizza</NavLink>
+                <NavIcon>
+                    <p>Menu</p>
+                    <Bars />
+                </NavIcon>
+            </Nav>
+        </>
+    )
+}
+export default Navbar;

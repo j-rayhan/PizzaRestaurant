@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import { FaPizzaSlice } from "react-icons/fa";
 
 export const Nav = styled.nav`
-    background: #d14141;
+    background: transparent;
     height: 80px;
     justify-content: center;
     display: flex;
